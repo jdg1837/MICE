@@ -1,0 +1,3 @@
+Chocolate,Rich smooth chocolate ice cream,0.2,0.2
+Vanilla,Real vanilla bean ice cream,0.2,0.25
+Strawberry,Chunks of strawberry wrapped in vanilla ice cream,0.2,0.2

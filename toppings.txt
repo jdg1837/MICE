@@ -1,0 +1,3 @@
+Cherry,Classic marichino cherry,0.1,0.2
+Chocolate Sauce,Rich thick chocolate,0.1,0.25
+Whipped Cream,Real sweet cream whipped to perfection,0.1,0.2

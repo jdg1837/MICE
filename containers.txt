@@ -1,0 +1,2 @@
+Cone,Crispy airy delight,0.25,0.5,2
+Waffle Cone,Crunchy wrapped waffle cake,0.35,0.75,3

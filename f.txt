@@ -1,0 +1,38 @@
+#servers
+Chelsea,27,9.5
+Diego,42,9.5
+Jonathan,99,9.5
+#end,
+#customers
+Brezeale,1320,(224)699-8778
+Rice,1325,(225)688-9559
+#end,
+#containers
+Cone,Crispy airy delight,0.25,0.5,2,5,1,cone.png
+Waffle Cone,Crunchy wrapped waffle cake,0.35,0.75,3,5,1,waffle.png
+#end,
+#toppings
+Cherry,Classic marichino cherry,0.1,0.2,cherry.png
+Chocolate Sauce,Rich thick chocolate,0.1,0.25,sauce.png
+Whipped Cream,Real sweet cream whipped to perfection,0.1,0.2,cream.png
+#end,
+#scoops
+Chocolate,Rich smooth chocolate ice cream,0.2,0.2,5,1,chocolate.png
+Vanilla,Real vanilla bean ice cream,0.2,0.25,5,1,vanilla.png
+Strawberry,Chunks of strawberry wrapped in vanilla ice cream,0.2,0.2,5,2,strawberry.png
+#end,
+#managers
+Turing,44,99.99
+#end,
+#emporium
+100,150,50
+#end,
+#orders
+#neworder,0,0
+0,0,0,2,1,2,3
+1,1,1,0,0,0,4
+#endorder,
+#neworder,1,0
+0,1,0,0,0,0,2
+#endorder,
+#end,

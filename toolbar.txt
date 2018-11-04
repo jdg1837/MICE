@@ -1,0 +1,32 @@
+#include "main_window.h"
+
+Main_window::Main_window() {
+
+	Gtk::Toolbar *toolbar = Gtk::manage(new Gtk::Toolbar);
+	vbox->add(*toolbar);
+
+	Gtk::Image new_scoop_icon = Gtk::manage(new Gtk::Image("new_scoop_icon.png"));
+    	Gtk::ToolButton *new_scoop = Gtk::manage(new Gtk::ToolButton(*new_scoop_icon));
+   	new_scoop->set_tooltip_markup("Add a Flavor");
+    	nw_scoop->signal_clicked().connect(sigc::mem_fun(*this, &Main_window::on_addflavor_click));
+    	toolbar->append(*new_scoop);
+
+	Gtk::Image new_container_icon = Gtk::manage(new Gtk::Image("new_container_icon.png"));
+    	Gtk::ToolButton *new_container = Gtk::manage(new Gtk::ToolButton(*new_container_icon));
+   	new_container->set_tooltip_markup("Add a Container");
+    	nw_container->signal_clicked().connect(sigc::mem_fun(*this, &Main_window::on_addcontainer_click));
+    	toolbar->append(*new_container);
+
+	Gtk::Image new_topping_icon = Gtk::manage(new Gtk::Image("new_topping_icon.png"));
+    	Gtk::ToolButton *new_topping = Gtk::manage(new Gtk::ToolButton(*new_topping_icon));
+   	new_topping->set_tooltip_markup("Add a Topping");
+    	nw_topping->signal_clicked().connect(sigc::mem_fun(*this, &Main_window::on_addtopping_click));
+    	toolbar->append(*new_topping);
+}
+
+void Main_window::on_about_click() 
+{
+    Glib::ustring s = "===============================\n <b>Mavericks Ice Cream Emporium<sup>R</sup></b>\n===============================\n\n<i>Designed by Jonathan El-Khoury\n            Juan Diego Gonzalez German\n            Chelsea May</i>\nCopyright 2017\n\nAll icons created by <span fgcolor = '#ff7f00'>GraphicLoads</span> \nUsed for non-commercial purpose under a freeware license";
+    Gtk::MessageDialog dlg(*this, s, true, Gtk::MESSAGE_INFO, Gtk::BUTTONS_OK, true);
+    dlg.run();
+}
